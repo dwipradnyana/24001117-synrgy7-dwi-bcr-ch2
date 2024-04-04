@@ -4,9 +4,992 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./assets/styles/output.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Binar Car Rental</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <!-- navbar -->
+    <header>
+      <nav class="start-0 top-0 z-20 flex w-full justify-center bg-[#f1f3ff]">
+        <div class="container w-11/12 md:w-3/4">
+          <div class="my-8 flex h-9 items-center justify-between py-4">
+            <div class="h-9 w-[100px] bg-[#0d28a6]"></div>
+            <div
+              class="hidden items-center space-x-0 md:flex md:space-x-4 lg:space-x-8"
+            >
+              <ul class="flex space-x-0 md:space-x-4 lg:space-x-8">
+                <li>
+                  <a href="#our-service" class="">Our Services</a>
+                </li>
+                <li>
+                  <a href="#why-us" class="">Why Us</a>
+                </li>
+                <li>
+                  <a href="#testimonial" class="">Testimonial</a>
+                </li>
+                <li>
+                  <a href="#faq" class="">FAQ</a>
+                </li>
+              </ul>
+              <button type="button">
+                <div class="rounded-md bg-[#5cb85f] px-3 py-2 text-white">
+                  Register
+                </div>
+              </button>
+            </div>
+            <button
+              onclick="toggleMenu()"
+              type="button"
+              class="block md:hidden"
+            >
+              <i data-feather="menu" class="text-sm font-bold"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Menu Mobile -->
+      <menu id="menu" class="fixed inset-0 z-50 hidden h-full w-full">
+        <div
+          class="absolute inset-y-0 left-0 w-1/2 bg-black text-white opacity-60"
+        ></div>
+        <div class="absolute inset-y-0 right-0 w-1/2 bg-white">
+          <div class="m-8 flex items-start justify-between">
+            <div class="space-y-4">
+              <h1 class="text-sm font-bold">BCR</h1>
+              <ul class="space-y-4">
+                <li>
+                  <a href="#our" class="">Our Services</a>
+                </li>
+                <li>
+                  <a href="#why" class="">Why Us</a>
+                </li>
+                <li>
+                  <a href="#testimonial" class="">Testimonial</a>
+                </li>
+                <li>
+                  <a href="#faq" class="">FAQ</a>
+                </li>
+              </ul>
+              <button type="button">
+                <div class="rounded-sm bg-[#5cb85f] px-3 py-2 text-white">
+                  Register
+                </div>
+              </button>
+            </div>
+            <button
+              onclick="toggleMenu()"
+              type="button"
+              class="block md:hidden"
+            >
+              <i data-feather="x" class="text-sm font-bold"></i>
+            </button>
+          </div>
+        </div>
+      </menu>
+    </header>
+    <!-- /navbar -->
+
+    <!-- main section -->
+    <section id="main" class="h-full w-full bg-[#f1f3ff] py-5">
+      <div
+        class="container mx-auto flex w-11/12 flex-wrap items-center justify-center md:mt-10 md:w-3/4"
+      >
+        <div class="mb-4 lg:mb-0 lg:w-1/2">
+          <h1
+            class="mb-5 max-w-lg text-4xl font-bold leading-[54px] md:max-w-xl"
+          >
+            Sewa & Rental Mobil Terbaik di kawasan Mengwi
+          </h1>
+          <p class="text-basefont-light max-w-lg leading-5">
+            Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas
+            terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
+            untuk sewa mobil selama 24 jam.
+          </p>
+          <div class="mt-5 flex lg:justify-start">
+            <button
+              type="button"
+              class="rounded-sm bg-[#5cb85f] px-3 py-2 text-white"
+            >
+              Mulai Sewa Mobil
+            </button>
+          </div>
+        </div>
+        <div class="lg:w-1/2">
+          <img
+            src="./assets/images/img_car.png"
+            alt="Car"
+            class="ml-auto mt-0"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- /main section -->
+
+    <!-- our section -->
+    <section id="our-service" class="py-10">
+      <div
+        class="container mx-auto mt-10 flex w-11/12 flex-wrap items-center justify-center md:w-full md:flex-row md:px-12"
+      >
+        <div class="mb-10 max-xl:px-12 lg:w-1/2">
+          <img
+            src="./assets/images/img_service.png"
+            alt="service"
+            class="ml-auto mt-0"
+          />
+        </div>
+        <div class="lg:w-1/2 lg:pl-40">
+          <h1
+            class="text-3xl font-bold leading-[36px] sm:mb-10 sm:max-w-lg lg:max-w-md"
+          >
+            Best Car Rental for any kind of trip in Mengwi!
+          </h1>
+          <p class="my-4 text-base font-light leading-5">
+            Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga
+            lebih murah dibandingkan yang lain, kondisi mobil baru, serta
+            kualitas pelayanan terbaik untuk perjalanan wisata bisnis, wedding,
+            meeting, dll.
+          </p>
+          <ul class="space-y-4 text-base font-normal text-black">
+            <li class="flex gap-4">
+              <i
+                data-feather="check"
+                class="rounded-full bg-[#CFD4ED] stroke-[3px] p-1 text-[#0D28A6]"
+              ></i>
+              <span>Sewa Mobil Dengan Supir di Bali 12 Jam </span>
+            </li>
+            <li class="flex gap-4">
+              <i
+                data-feather="check"
+                class="rounded-full bg-[#CFD4ED] stroke-[3px] p-1 text-[#0D28A6]"
+              ></i>
+              <span>Sewa Mobil Lepas Kunci di Bali 24 Jam </span>
+            </li>
+            <li class="flex gap-4">
+              <i
+                data-feather="check"
+                class="rounded-full bg-[#CFD4ED] stroke-[3px] p-1 text-[#0D28A6]"
+              ></i>
+              <span> Sewa Mobil Jangka Panjang Bulanan </span>
+            </li>
+            <li class="flex gap-4">
+              <i
+                data-feather="check"
+                class="rounded-full bg-[#CFD4ED] stroke-[3px] p-1 text-[#0D28A6]"
+              ></i>
+              <span> Gratis Antar - Jemput Mobil di Bandara </span>
+            </li>
+            <li class="flex gap-4">
+              <i
+                data-feather="check"
+                class="rounded-full bg-[#CFD4ED] stroke-[3px] p-1 text-[#0D28A6]"
+              ></i>
+              <span> Layanan Airport Transfer / Drop In Out </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- /our section -->
+
+    <!-- why us section -->
+    <section id="why-us">
+      <div
+        class="relative mx-auto px-8 py-12 sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-12 lg:py-16"
+      >
+        <div class="mb-8 text-center sm:text-left lg:mb-12">
+          <h2 class="mb-6 font-sans text-3xl font-bold leading-normal">
+            Why Us?
+          </h2>
+          <p class="text-base">Mengapa harus pilih Binar Car Rental?</p>
+        </div>
+        <div class="grid gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-4">
+          <div class="rounded-lg border-2 px-4 py-4 lg:px-6 lg:py-6">
+            <div
+              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-yellow-400"
+            >
+              <i data-feather="thumbs-up" class="text-white"></i>
+            </div>
+            <h3 class="mb-3 text-lg font-bold sm:text-xl">Mobil Lengkap</h3>
+            <p class="text-justify text-base">
+              Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan
+              terawat.
+            </p>
+          </div>
+          <div class="rounded-lg border-2 px-4 py-4 lg:px-6 lg:py-6">
+            <div
+              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-500"
+            >
+              <i data-feather="tag" class="text-white"></i>
+            </div>
+            <h3 class="mb-3 text-lg font-bold sm:text-xl">Harga Murah</h3>
+            <p class="text-justify text-base">
+              Harga murah dan bersaing, bisa bandingkan harga kami dengan rental
+              mobil lain
+            </p>
+          </div>
+          <div class="rounded-lg border-2 px-4 py-4 lg:px-6 lg:py-6">
+            <div
+              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-blue-700"
+            >
+              <i data-feather="clock" class="text-white"></i>
+            </div>
+            <h3 class="mb-3 font-sans text-lg font-bold sm:text-xl">
+              Layanan 24 Jam
+            </h3>
+            <p class="text-justify font-sans text-base">
+              Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga
+              tersedia di akhir minggu
+            </p>
+          </div>
+          <div class="rounded-lg border-2 px-4 py-4 lg:px-6 lg:py-6">
+            <div
+              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-green-500"
+            >
+              <i data-feather="award" class="text-white"></i>
+            </div>
+            <h3 class="mb-3 font-sans text-lg font-bold sm:text-xl">
+              Sopir Profesional
+            </h3>
+            <p class="text-justify font-sans text-base">
+              Sopir yang profesional, berpengalaman, jujur, ramah dan selalu
+              tepat waktu
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /why us section -->
+
+    <!-- testimonial section -->
+    <section id="testimonial" class="py-10">
+      <div
+        class="relative flex flex-col items-center overflow-hidden md:mt-24 md:px-0"
+      >
+        <div class="space-y-5 text-center">
+          <h1 class="text-3xl font-bold text-black">Testimonial</h1>
+          <p class="text-base font-light text-black">
+            Berbagai review positif dari para pelanggan kami
+          </p>
+        </div>
+        <div class="swiper hidden h-[300px] w-full md:flex">
+          <div class="swiper-wrapper flex flex-row items-center">
+            <div
+              class="swiper-slide flex flex-row items-center gap-[46px] rounded-[8px] bg-[#F1F3FF] p-[46px]"
+            >
+              <img
+                src="./assets/images/img_photo_1.png"
+                class="h-20 w-20 rounded-full object-cover"
+                alt=""
+              />
+              <div class="flex flex-col gap-2">
+                <div class="flex flex-row items-center">
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                </div>
+                <p class="text-base font-light">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod”
+                </p>
+                <p class="text-base font-normal">John Dee 32, Bromo</p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide flex flex-row items-center gap-[46px] rounded-[8px] bg-[#F1F3FF] p-[46px]"
+            >
+              <img
+                src="./assets/images/img_photo_2.png"
+                class="h-20 w-20 rounded-full object-cover"
+                alt=""
+              />
+              <div class="flex flex-col gap-2">
+                <div class="flex flex-row items-center">
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                </div>
+                <p class="text-base font-light">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod”
+                </p>
+                <p class="text-base font-normal">John Dee 32, Bromo</p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide flex flex-row items-center gap-[46px] rounded-[8px] bg-[#F1F3FF] p-[46px]"
+            >
+              <img
+                src="./assets/images/img_photo_1.png"
+                class="h-20 w-20 rounded-full object-cover"
+                alt=""
+              />
+              <div class="flex flex-col gap-2">
+                <div class="flex flex-row items-center">
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                </div>
+                <p class="text-base font-light">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod”
+                </p>
+                <p class="text-base font-normal">John Dee 32, Bromo</p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide flex flex-row items-center gap-[46px] rounded-[8px] bg-[#F1F3FF] p-[46px]"
+            >
+              <img
+                src="./assets/images/img_photo_2.png"
+                class="h-20 w-20 rounded-full object-cover"
+                alt=""
+              />
+              <div class="flex flex-col gap-2">
+                <div class="flex flex-row items-center">
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                </div>
+                <p class="text-base font-light">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod”
+                </p>
+                <p class="text-base font-normal">John Dee 32, Bromo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile -->
+        <div class="swipermobile flex h-max w-full md:hidden">
+          <div class="swiper-wrapper flex flex-row items-center">
+            <div
+              class="swiper-slide flex flex-col items-center gap-6 rounded-[8px] bg-[#F1F3FF] p-[46px]"
+            >
+              <img
+                src="./src/assets/img/img_photo_1.png"
+                alt="img_photo"
+                class="h-20 w-20 rounded-full object-cover"
+              />
+              <div class="flex flex-col items-center gap-6 text-sm">
+                <div class="flex flex-row items-center">
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <p class="font-light">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod”
+                  </p>
+                  <p class="font-normal">John Dee 32, Bromo</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide flex flex-col items-center gap-6 rounded-[8px] bg-[#F1F3FF] p-[46px]"
+            >
+              <img
+                src="./assets/images/img_photo_1.png"
+                alt="img_photo"
+                class="h-20 w-20 rounded-full object-cover"
+              />
+              <div class="flex flex-col items-center gap-6 text-sm">
+                <div class="flex flex-row items-center">
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <p class="font-light">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod”
+                  </p>
+                  <p class="font-normal">John Dee 32, Bromo</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide flex flex-col items-center gap-6 rounded-[8px] bg-[#F1F3FF] p-[46px]"
+            >
+              <img
+                src="./assets/images/img_photo_2.png"
+                alt="img_photo"
+                class="h-20 w-20 rounded-full object-cover"
+              />
+              <div class="flex flex-col items-center gap-6 text-sm">
+                <div class="flex flex-row items-center">
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <p class="font-light">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod”
+                  </p>
+                  <p class="font-normal">John Dee 32, Bromo</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide flex flex-col items-center gap-6 rounded-[8px] bg-[#F1F3FF] p-[46px]"
+            >
+              <img
+                src="./assets/images/img_photo_1.png"
+                alt="img_photo"
+                class="h-20 w-20 rounded-full object-cover"
+              />
+              <div class="flex flex-col items-center gap-6 text-sm">
+                <div class="flex flex-row items-center">
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                  <i
+                    data-feather="star"
+                    class="fill-[#F9CC00] stroke-0 text-[#F9CC00]"
+                  ></i>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <p class="font-light">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod”
+                  </p>
+                  <p class="font-normal">John Dee 32, Bromo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 flex w-full justify-center gap-6">
+          <button
+            class="border-btn mx-4 rounded-full border hover:bg-green-600"
+            onclick="prevCarousel()"
+          >
+            <i
+              data-feather="chevron-left"
+              class="p-1 text-black hover:text-white"
+            ></i>
+          </button>
+          <button
+            class="border-btn mx-4 rounded-full border hover:bg-green-600"
+            onclick="nextCarousel()"
+          >
+            <i
+              data-feather="chevron-right"
+              class="p-1 text-black hover:text-white"
+            ></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- /testimonial section -->
+
+    <!-- getting started -->
+    <section id="getting-started" class="py-10">
+      <div
+        class="relative mx-auto px-8 py-12 sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-12 lg:py-16"
+      >
+        <div class="rounded-xl bg-blue-800 p-12 sm:p-16">
+          <div class="item-center flex justify-center">
+            <div class="max-w-screen-sm text-center">
+              <h2
+                class="mb-6 font-sans text-3xl font-bold leading-normal text-white sm:text-4xl"
+              >
+                Sewa Mobil di Mengwi Sekarang
+              </h2>
+              <p class="mb-10 font-sans text-base text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a
+                href="/"
+                class="inline-flex h-10 items-center justify-center rounded bg-green-500 px-5 font-sans font-semibold text-white hover:bg-green-600"
+              >
+                Mulai Sewa Mobil
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /getting started -->
+
+    <!-- faq section -->
+    <section id="faq" class="py-10">
+      <div class="flex h-full w-full items-center justify-center">
+        <div class="container block w-11/12 justify-between md:flex md:w-3/4">
+          <div class="w-full space-y-4 text-center md:w-1/3 md:text-start">
+            <h1 class="text-3xl font-bold text-black">
+              Frequently Asked Question
+            </h1>
+            <p class="text-base font-light text-black">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+
+          <div class="mt-6 w-full space-y-4 md:mt-0 md:w-2/4">
+            <div class="relative overflow-hidden rounded-lg border shadow-sm">
+              <input
+                type="checkbox"
+                class="peer absolute inset-x-0 top-0 z-10 h-12 w-full cursor-pointer opacity-0"
+              />
+              <div
+                class="my-2 flex h-12 w-[90%] items-center pl-5 md:my-0 md:w-full"
+              >
+                <h1 class="text-base font-light">
+                  Apa saja syarat yang dibutuhkan?
+                </h1>
+              </div>
+              <div
+                class="absolute right-3 top-3 my-2 -rotate-90 transition-transform duration-500 peer-checked:rotate-90 md:my-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </div>
+              <div
+                class="max-h-0 overflow-hidden bg-white transition-all duration-500 peer-checked:max-h-40"
+              >
+                <div class="border-t p-5">
+                  <p class="text-base font-light">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptate iure quod odio ipsam! Natus dolorem ea laudantium
+                    vitae sit nulla, aut tempore possimus error maiores.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="relative overflow-hidden rounded-lg border shadow-sm">
+              <input
+                type="checkbox"
+                class="peer absolute inset-x-0 top-0 z-10 h-12 w-full cursor-pointer opacity-0"
+              />
+              <div
+                class="my-2 flex h-12 w-[80%] items-center pl-5 md:my-0 md:w-full"
+              >
+                <h1 class="text-base font-light">
+                  Berapa hari minimal sewa mobil lepas kunci?
+                </h1>
+              </div>
+              <div
+                class="absolute right-3 top-3 my-2 -rotate-90 transition-transform duration-500 peer-checked:rotate-90 md:my-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </div>
+              <div
+                class="max-h-0 overflow-hidden bg-white transition-all duration-500 peer-checked:max-h-40"
+              >
+                <div class="border-t p-5">
+                  <p class="text-base font-light">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptate iure quod odio ipsam! Natus dolorem ea laudantium
+                    vitae sit nulla, aut tempore possimus error maiores.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="relative overflow-hidden rounded-lg border shadow-sm">
+              <input
+                type="checkbox"
+                class="peer absolute inset-x-0 top-0 z-10 h-12 w-full cursor-pointer opacity-0"
+              />
+              <div class="my-2 flex h-12 w-[90%] items-center pl-5 md:my-0">
+                <h1 class="text-base font-light">
+                  Berapa hari sebelumnya sabaiknya booking sewa mobil?
+                </h1>
+              </div>
+              <div
+                class="absolute right-3 top-3 my-2 -rotate-90 transition-transform duration-500 peer-checked:rotate-90 md:my-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </div>
+              <div
+                class="max-h-0 overflow-hidden bg-white transition-all duration-500 peer-checked:max-h-40"
+              >
+                <div class="border-t p-5">
+                  <p class="text-base font-light">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptate iure quod odio ipsam! Natus dolorem ea laudantium
+                    vitae sit nulla, aut tempore possimus error maiores.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="relative overflow-hidden rounded-lg border shadow-sm">
+              <input
+                type="checkbox"
+                class="peer absolute inset-x-0 top-0 z-10 h-12 w-full cursor-pointer opacity-0"
+              />
+              <div class="my-2 flex h-12 w-[80%] items-center pl-5 md:my-0">
+                <h1 class="text-base font-light">
+                  Apakah Ada biaya antar-jemput?
+                </h1>
+              </div>
+              <div
+                class="absolute right-3 top-3 my-2 -rotate-90 transition-transform duration-500 peer-checked:rotate-90 md:my-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </div>
+              <div
+                class="max-h-0 overflow-hidden bg-white transition-all duration-500 peer-checked:max-h-40"
+              >
+                <div class="border-t p-5">
+                  <p class="text-base font-light">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptate iure quod odio ipsam! Natus dolorem ea laudantium
+                    vitae sit nulla, aut tempore possimus error maiores.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="relative overflow-hidden rounded-lg border shadow-sm">
+              <input
+                type="checkbox"
+                class="peer absolute inset-x-0 top-0 z-10 h-12 w-full cursor-pointer opacity-0"
+              />
+              <div class="my-2 flex h-12 w-[80%] items-center pl-5 md:my-0">
+                <h1 class="text-base font-light">
+                  Bagaimana jika terjadi kecelakaan?
+                </h1>
+              </div>
+              <div
+                class="absolute right-3 top-3 my-2 -rotate-90 transition-transform duration-500 peer-checked:rotate-90 md:my-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </div>
+              <div
+                class="max-h-0 overflow-hidden bg-white transition-all duration-500 peer-checked:max-h-40"
+              >
+                <div class="border-t p-5">
+                  <p class="text-sm font-light">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptate iure quod odio ipsam! Natus dolorem ea laudantium
+                    vitae sit nulla, aut tempore possimus error maiores.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /faq section -->
+
+    <!-- footer section -->
+    <footer class="py-20">
+      <div class="flex h-full w-full items-center justify-center">
+        <div
+          class="container block w-11/12 justify-between space-y-4 md:flex md:w-3/4 md:space-y-0"
+        >
+          <div class="w-full md:w-1/4">
+            <div class="space-y-4">
+              <p class="w-[80%] text-base font-light text-black md:w-full">
+                Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000
+              </p>
+              <p class="text-base font-light text-black">
+                binarcarrental@gmail.com
+              </p>
+              <p class="text-base font-light text-black">081-233-334-808</p>
+            </div>
+          </div>
+          <div class="w-fit">
+            <div class="flex flex-col space-y-4">
+              <a
+                href="#our"
+                class="text-base font-normal text-black md:font-light"
+                >Our Services</a
+              >
+              <a
+                href="#why"
+                class="text-base font-normal text-black md:font-light"
+                >Why Us</a
+              >
+              <a
+                href="#testimonial"
+                class="text-base font-normal text-black md:font-light"
+                >Testimonial</a
+              >
+              <a
+                href="#faq"
+                class="text-base font-normal text-black md:font-light"
+                >FAQ</a
+              >
+            </div>
+          </div>
+          <div class="w-full md:w-1/4">
+            <div class="space-y-4">
+              <p class="text-base font-light text-black">Connect with us</p>
+              <div class="flex justify-start gap-4">
+                <i
+                  data-feather="facebook"
+                  class="h-[32px] w-[32px] rounded-full bg-[#0D28A6] stroke-1 p-[5px] text-white"
+                ></i>
+                <i
+                  data-feather="instagram"
+                  class="h-[32px] w-[32px] rounded-full bg-[#0D28A6] stroke-1 p-[5px] text-white"
+                ></i>
+                <i
+                  data-feather="twitter"
+                  class="h-[32px] w-[32px] rounded-full bg-[#0D28A6] stroke-1 p-[5px] text-white"
+                ></i>
+                <i
+                  data-feather="mail"
+                  class="h-[32px] w-[32px] rounded-full bg-[#0D28A6] stroke-1 p-[5px] text-white"
+                ></i>
+                <i
+                  data-feather="twitch"
+                  class="h-[32px] w-[32px] rounded-full bg-[#0D28A6] stroke-1 p-[5px] text-white"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/4">
+            <div class="space-y-4">
+              <p class="text-base font-light text-black">
+                Copyright Binar 2022
+              </p>
+              <div class="h-9 w-[100px] bg-[#0D28A6]"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer section -->
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 32,
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+      const swipermobile = new Swiper(".swipermobile", {
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 32,
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+      nextCarousel = () => {
+        swipermobile.slideNext();
+        swiper.slideNext();
+      };
+      prevCarousel = () => {
+        swipermobile.slidePrev();
+        swiper.slidePrev();
+      };
+    </script>
   </body>
 </html>
